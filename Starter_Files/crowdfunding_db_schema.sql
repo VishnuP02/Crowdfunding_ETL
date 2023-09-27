@@ -1,3 +1,5 @@
+--Table schema 
+
 CREATE TABLE "contacts" (
     "contact_id" int   NOT NULL,
     "first_name" varchar   NOT NULL,
@@ -52,3 +54,18 @@ REFERENCES "category" ("category_id");
 
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
+
+--Query to verify that the tables have been correctly created 
+
+SELECT * 
+FROM contacts;
+
+SELECT * 
+FROM category;
+
+SELECT * 
+FROM subcategory;
+
+SELECT * 
+FROM campaign;
+
