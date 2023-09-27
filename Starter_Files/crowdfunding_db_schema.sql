@@ -68,4 +68,3 @@ FROM subcategory;
 
 SELECT * 
 FROM campaign;
-
